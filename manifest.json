@@ -1,0 +1,21 @@
+{
+  "name": "SSH IP Address",
+  "version": "1.0.0",
+  "description": "Opens selected IP address in SSH terminal",
+  "manifest_version": 3,
+  "author": "Orlaani",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "PlaceHolder"
+  },
+  "permissions": ["contextMenus", "tabs"],
+  "background": {
+    "service_worker": "script.js"
+  },
+  "commands": {
+    "OpenIP": {
+      "suggested_key": "Ctrl+Shift+Y",
+      "description": "Opens selected IP address in SSH terminal"
+    }
+  }
+}
